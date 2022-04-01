@@ -12,40 +12,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <h1>Calculator App</h1>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
 
-    <!-- operators here -->
-    <div class="calculator frame">
-        <div class="calculator operations">
-            <ul>
-            <button id="add">Add</button></ul>
-            <ul><button id="subtract">Subtract</button></ul>
-            <ul><button id="multiply">Multiply</button></ul>
-            <ul><button id="divide">Divide</button></ul>
-            <ul><button id="reset">Reset</button></ul>
+    <div class="calculator">
+
+        <input type="text" class="calculator-screen" value="0" disabled />
+        
+        <div class="calculator-keys">
+          
+          <button type="button" class="operator" value="+">+</button>
+          <button type="button" class="operator" value="-">-</button>
+          <button type="button" class="operator" value="*">&times;</button>
+          <button type="button" class="operator" value="/">&divide;</button>
+      
+          <button type="button" value="7">7</button>
+          <button type="button" value="8">8</button>
+          <button type="button" value="9">9</button>
+      
+      
+          <button type="button" value="4">4</button>
+          <button type="button" value="5">5</button>
+          <button type="button" value="6">6</button>
+      
+      
+          <button type="button" value="1">1</button>
+          <button type="button" value="2">2</button>
+          <button type="button" value="3">3</button>
+      
+      
+          <button type="button" value="0">0</button>
+          <button type="button" class="decimal function" value=".">.</button>
+          <button type="button" class="all-clear function" value="all-clear">AC</button>
+      
+          <button type="button" class="equal-sign operator" value="=">=</button>
+      
         </div>
-
-        <!-- integers here -->
-        <div class="number buttons">
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="zero">0</button>
-        </div>
-
-        <!-- results here -->
-        <div class="results">
-            <span id="active-number"></span>
-            <br>
-            Results: <span id="active-results"></span> </div>
-
-    </div>
+      </div>
 </body>
 </html>
